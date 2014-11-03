@@ -1,6 +1,7 @@
 A gamebook design convenion
 ===========================
 
+```
 El gdd o gamebook, es un libro apaisado del juego desde el punto de vista del usuario. 
 Refleja cronológicamente todas sus estapas desde que conoce el juego por primera vez hasta que lo desinstala.
 
@@ -14,6 +15,7 @@ Para el formato y el contenido en sí:
 3) En la pagina de la derecha están los comentarios de los desarrolladores con anotaciones técnicas que rellenamos entre todos: como se acomete tecnicamente esta pagina, que dificultades tenemos, que rutas tomamos, que problemas tiene, por qué hacemos asi esto, por qué no lo hacemos de otra manera, etc etc... Esto podria visualizarse como un chat transcrito en la página.
 
 Y asi, pagina tras pagina, explicamos todo el juego publicitaria, artistica, tecnicamente de principio a fin, en orden cronologico según lo experimentará el jugador
+```
 
 ### license
 [https://creativecommons.org/about/cc0](CC0 license). Feel free to do almost whatever you want with this.

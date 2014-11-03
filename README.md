@@ -1,5 +1,5 @@
-A gamebook design convenion
-===========================
+A gamebook design convention
+============================
 
 ```
 El gdd o gamebook, es un libro apaisado del juego desde el punto de vista del usuario. 

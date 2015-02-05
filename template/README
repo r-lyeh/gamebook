@@ -1,0 +1,29 @@
+This all needs to be performed in a python virtualenv:
+
+In an Ubuntu you can create one by using:
+
+	$ virtuenenv .game
+
+and activate it via:
+
+	$ source .game/bin/activate
+
+now install sphinx in it via
+	
+	$ pip install sphinx
+
+To compile the Documentation use
+
+	$ make clean html                # Make the docs in HTML
+	$ firefox _build/html/index.html # View it in a firefox browser
+  
+	$ make clean latexpdf               # Make the docs in Latex PDF
+	$ evince _build/latexpdf/sample.pdf # View it in a firefox browser
+  
+There are more formats available. So check out what you need.
+
+To configure the template use the conf.py file and enter your details
+there. It should be straight forward.
+
+Always look at the WARNINGS the compiling gives you. They are
+really helpfull.

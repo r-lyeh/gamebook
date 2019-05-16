@@ -8,6 +8,9 @@
 
     :copyright: Copyright 2011 by Arthur Gautier
     :copyright: Copyright 2011 by Zenexity
+
+    Updated for Python 3 Compatibility by Nicholas Burley
+
     :license: BSD, see LICENSE for details.
 """
 
@@ -57,7 +60,7 @@ class Ditaa(Directive):
 
     def run(self):
         if self.arguments:
-            print self.arguments
+            print(self.arguments)
             document = self.state.document
             if self.content:
                 return [document.reporter.warning(
@@ -106,7 +109,7 @@ def render_ditaa(self, code, options, prefix='ditaa'):
     outfullfn = path.join(self.builder.outdir, '_images', outfname)
 
     if path.isfile(outfullfn):
-        print "outfile %s exists already!" % outfullfn
+        print( "outfile %s exists already!" ) % outfullfn
         return outrelfn, outfullfn
 
     ensuredir(path.dirname(outfullfn))
@@ -127,9 +130,9 @@ def render_ditaa(self, code, options, prefix='ditaa'):
 
     try:
         #self.builder.warn(ditaa_args) #debug
-        print "ditaa arguments: %s" % ditaa_args
+        print( "ditaa arguments: %s" ) % ditaa_args
         p = Popen(ditaa_args, stdout=PIPE, stdin=PIPE, stderr=PIPE)
-    except OSError, err:
+    except OSError as err:
         self.builder.warn("ditaa command failed because of %s" % err)
         self.builder._ditaa_warned_dot = True
         return None, None
@@ -138,14 +141,14 @@ def render_ditaa(self, code, options, prefix='ditaa'):
         # Ditaa may close standard input when an error occurs,
         # resulting in a broken pipe on communicate()
         stdout, stderr = p.communicate(code)
-    except OSError, err:
+    except OSError as err:
         if err.errno != EPIPE:
-            print "ditaa error occured"
+            print( "ditaa error occured" )
             raise
         wentWrong = True
-    except IOError, err:
+    except IOError as err:
         if err.errno != EINVAL:
-            print "ditaa error occured"
+            print( "ditaa error occured" )
             raise
         wentWrong = True
     if wentWrong:
@@ -156,7 +159,7 @@ def render_ditaa(self, code, options, prefix='ditaa'):
     if p.returncode != 0:
         raise DitaaError('ditaa exited with error:\n[stderr]\n%s\n'
                          '[stdout]\n%s' % (stderr, stdout))
-    print "ditaa returned with status: %s" % (p.returncode)
+    print( "ditaa returned with status: %s" ) % (p.returncode)
     return outrelfn, outfullfn
 
 
@@ -164,8 +167,8 @@ def render_ditaa_html(self, node, code, options, prefix='ditaa',
                       imgcls=None, alt=None):
     try:
         fname, outfn = render_ditaa(self, code, options, prefix)
-    except DitaaError, e:
-        print "DitaaError was thrown during rendering: %s" % e
+    except DitaaError as e:
+        print( "DitaaError was thrown during rendering: %s" ) % e
         raise nodes.SkipNode
 
     inline = node.get('inline', False)

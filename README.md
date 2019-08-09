@@ -18,6 +18,7 @@ The gamebook convention
 Page after page, we uncover the whole game from a very focused player's point of view while we explain all marketing-artwork-design-technical hints/constraints we may have during development. The whole book is read in choronological order, exactly as player would experience our game from the very beginning until the end.
 
 ## History
+- Revision #3 - Updated to Python 3 (16/May/19) (@NBurley93)
 - Revision #2 - English version (04/Feb/15) (@r-lyeh)
 - Revision #1 - Initial commit, Spanish version (03/Nov/14) (@r-lyeh)
 

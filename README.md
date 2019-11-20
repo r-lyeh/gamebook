@@ -6,12 +6,12 @@ The gamebook convention
 1. The gamebook has no chapters per se, but may have an optional index.
 2. First pages cover anything that happens *before the game is run*: marketing, ads, gamecons, reviews, webs, videos, landing pages, websites, press kits, app-store views, kickstarter, trials, purchases, downloads, installation, dependencies, setup, etc...
 3. Middle pages cover anything that happens *until game is over*: menus, login, loading screens, tutorials, levels, stages, rewards, bosses, credits, etc...
-4. Final pages cover everything that happens *after game is over*: uninstall, extensions, dlcs, app-store reviews, blog comments, and regular post-activity once game is finished. Everything that makes a player to reinstall and replay the game applies here too.
+4. Final pages cover everything that happens *after game is over*: extensions, dlcs, uninstalling, app-store reviews, blog comments, and regular post-activity once game is finished. Everything that makes a player to reinstall and replay the game applies here too.
 
 ## Format
-1. Every pair of landscape pages features a stage (inside or outside the game) that the player has *to experiment* (left page), and also how we are going *to make it*.
+1. Every pair of landscape pages features a stage (inside or outside the game) that the player has *to experiment* (left page), and also how developers are going *to make it possible* (right page).
 2. On every *left page* (player's view) there are images, storyboards, hand-drawn sketches, pictures, screenshots, huds, etc... that explain, in *visual language*, what the player has to do/experiment from his/her own point of view. Arrows, bubbles, hand-made annotations, etc are allowed; flows, charts and diagrams are not.
-3. On every *right page* (devteam's view) there is all required information for the left page to happen: implementation details, required tech, algorithms and code approaches, artwork directions, upcoming difficulties, routes to take, time estimations, budget constraints, what to do, and not to do, etc etc... Any kind of info is allowed as long as it provides valuable information to the team: richtext, urls, mails, comments, text chats, charts, diagrams, flows, source code, external references, etc...
+3. On every *right page* (developer's view) there is all required information for the left page to happen: implementation details, required tech, algorithms and code approaches, artwork directions, upcoming difficulties, routes to take, time estimations, budget constraints, what to do, and not to do, etc etc... Any kind of info is allowed as long as it provides valuable information to the team: richtext, urls, mails, comments, text chats, charts, diagrams, flows, source code, external references, etc...
 4. Left page is *unaware*, and it does not care, of what it happens or reads *on the right page*.
 
 ## Result

@@ -23,4 +23,5 @@ Page after page, we uncover the whole game from a very focused player's point of
 - Revision #1 - Initial commit, Spanish version (03/Nov/14) (@r-lyeh)
 
 ## License
-[https://creativecommons.org/about/cc0](CC0 license) :)
+- CC0 license :) 
+- https://creativecommons.org/about/cc0

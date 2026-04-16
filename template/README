@@ -2,7 +2,7 @@ This all needs to be performed in a python virtualenv:
 
 In an Ubuntu you can create one by using:
 
-	$ virtuenenv .game
+	$ virtualenv .game
 
 and activate it via:
 
